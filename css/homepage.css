@@ -38,6 +38,7 @@ body.home-page .nav .item svg {
 
 body.home-page .tab-set {
 	color: white;
+	min-height: 400px;
 }
 
 body.home-page .tab-set .tabs {
