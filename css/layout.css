@@ -1,0 +1,44 @@
+section {
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.column {
+    margin-bottom: 30px;
+}
+
+@media all and (min-width: 800px) {
+    .container {
+        width: 740px;
+    }
+
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+
+    .column {
+        flex-basis: 100%;
+        flex: 1;
+        margin: 10px;
+    }
+
+    .column.double {
+        flex: 2;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}

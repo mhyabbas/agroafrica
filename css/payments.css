@@ -1,0 +1,115 @@
+.payments {
+	margin: 10px;
+	padding: 25px;
+	background-color: white;
+}
+
+.payments table {
+	border-collapse: collapse;
+	border-style: hidden;
+}
+
+.payments th, .payments td {
+	padding: 5px;
+	border: 1px solid #9a9a9a;
+}
+
+.payments td.bg-green {
+	background-color: rgba(46, 142, 46, 0.1);
+}
+
+.payments .text-green {
+	margin: 0;
+	color: #2e8e2e;
+	font-weight: bold;
+}
+
+.payments .order {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	color: #9a9a9a;
+	line-height: 1.2;
+}
+
+.payments .order p {
+	flex: 1 0 auto;
+	min-height: 40px;
+	border-right: 1px solid #9a9a9a;
+	padding: 0 20px;
+}
+
+.payments .order p:first-of-type {
+	padding-left: 0;
+}
+
+.payments .order p:last-of-type {
+	border-right: none;
+}
+
+.payments .order strong {
+	font-size: 18px;
+}
+
+.payments .payment img {
+	width: auto;
+	height: 30px;
+}
+
+.payments .small-text {
+	margin: 0;
+}
+
+.payments .bitcoin {
+	display: flex;
+	align-items: flex-start;
+}
+
+.payments .bitcoin .qr-code {
+	margin-right: 20px;
+	width: 120px;
+	height: auto;
+}
+
+.payments .bitcoin form {
+	flex: 1;
+}
+
+.payments .bitcoin form .form-footer div {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	margin-bottom: 10px;
+}
+
+.payments .bitcoin form .form-footer img {
+	width: auto;
+	height: 25px;
+	margin-right: 10px;
+}
+
+@media all and (min-width: 800px) {
+	.payments .bitcoin .qr-code {
+		width: 200px;
+		height: auto;
+	}
+
+	.payments .bitcoin form .form-footer {
+		display: flex;
+	}
+
+	.payments .bitcoin form .form-footer div {
+		margin-bottom: inherit;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.payments {
+		display: flex;
+	}
+
+	.payments .column:first-of-type {
+		border-right: 1px solid #9a9a9a;
+		padding-right: 20px;
+	}
+}

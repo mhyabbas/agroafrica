@@ -1,0 +1,195 @@
+.product {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 10px;
+}
+
+.product .detail {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 25px;
+	background-color: white;
+}
+
+.product .thumbnail {
+	height: 250px;
+	background: url('../assets/products/kidney beans.jpg') no-repeat center center; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.product .content {
+	padding: 20px;
+}
+
+.product .price {
+	margin-bottom: 0;
+	color: #2e8e2e;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+.product .minimum-order {
+	color: #9a9a9a;
+	margin: 0;
+}
+
+.product .btn {
+	margin-right: 15px;
+	margin-bottom: 15px;
+}
+
+/*Sidebar*/
+
+.product .sidebar {
+	background-color: #e5e5e5;
+}
+
+.product .sidebar-title {
+	display: flex;
+	align-items: center;
+	height: 60px;
+	padding: 20px;
+	background-color: #2e8e2e;
+}
+
+.product .sidebar-title h2 {
+	margin: 0;
+	color: white;
+}
+
+.product .sidebar-detail {
+	padding: 0 20px 20px;
+	line-height: 1.2;
+}
+
+.product .sidebar-detail p strong {
+	color: #2e8e2e;
+}
+
+.product .sidebar-detail hr {
+	margin: 0;
+	border-top: 1px solid #676767;
+}
+
+.product .sidebar-detail .name {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product .sidebar-detail .name svg {
+	width: 15px;
+	height: 15px;
+	fill: black;
+}
+
+.product .sidebar-detail .quantity {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.product .sidebar-detail .quantity div {
+	display: flex;
+}
+
+.product .sidebar-detail .quantity div input {
+	padding: 5px;
+	width: 60px;
+	height: 100%;
+	background-color: transparent;
+	border: 1px solid #676767;
+	font-size: 16px;
+}
+
+.product .sidebar-detail .quantity div span {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 30px;
+	border: 1px solid #676767;
+	font-size: 20px;
+	cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.product .sidebar-detail .quantity div span:first-of-type {
+	border-right: 0;
+}
+
+.product .sidebar-detail .quantity div span:last-of-type {
+	border-left: 0;
+}
+
+.product .sidebar-detail .cost {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.product .sidebar-detail .cost-amount {
+	margin: 0;
+	font-size: 26px;
+	text-transform: uppercase;
+}
+
+.product .sidebar-detail img {
+	width: auto;
+	height: 25px;
+}
+
+.product .sidebar-detail .btn {
+	display: flex;
+	margin-right: 0;
+}
+
+@media all and (min-width: 800px) {
+	.product {
+		flex-direction: row;
+	}
+
+	.product .detail {
+		flex: 2 1 60%;
+		margin-right: 25px;
+		margin-bottom: 0;
+	}
+
+	.product .sidebar {
+		flex: 1 1 40%;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.product .detail {
+		flex: 2 1 70%;
+		flex-direction: row;
+	}
+
+	.product .thumbnail {
+		flex: 1 1 40%;
+		height: auto;
+	}
+
+	.product .content {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		flex: 2 1 60%;
+	}
+
+	.product .btn {
+		margin-bottom: 0;
+	}
+
+	.product .sidebar {
+		flex: 1 1 30%;
+	}
+}

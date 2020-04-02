@@ -1,0 +1,79 @@
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	line-height: 1.2;
+}
+
+.card {
+	position: relative;
+	margin: 10px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.card .thumbnail {
+	position: relative;
+	padding-top: 80%;
+	width: 100%;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.card .thumbnail img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+}
+
+.card .content {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	bottom: 0;
+	padding: 5px 15px;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+
+.card a {
+	display: flex;
+	color: white;
+	text-decoration: none;
+}
+
+.card svg {
+	width: 25px;
+	height: 25px;
+	fill: white;
+}
+
+@media all and (min-width: 500px) {
+	.cards {
+		justify-content: flex-start;
+	}
+
+	.card {
+		flex: 0 1 45%;
+		max-width: inherit;
+	}
+}
+
+@media all and (min-width: 800px) {
+	.card {
+		flex: 0 1 29%;
+	}
+}
+
+@media all and (min-width: 1200px) {
+	.card {
+		flex: 0 1 22%;
+	}
+}
