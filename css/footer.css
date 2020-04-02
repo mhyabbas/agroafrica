@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 footer {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -32,7 +34,9 @@ footer a {
 
 @media all and (min-width: 800px) {
 	footer .row {
-		align-items: inherit;
+		-webkit-box-align: inherit;
+		    -ms-flex-align: inherit;
+		        align-items: inherit;
 	}
 
 	footer .column {
@@ -42,6 +46,8 @@ footer a {
 
 @media all and (min-width: 1200px) {
 	footer .column {
-		flex: 0 1 25%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 1 25%;
+		        flex: 0 1 25%;
 	}
 }

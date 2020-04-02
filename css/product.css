@@ -1,23 +1,34 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .product {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin: 10px;
 }
 
 .product .detail {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
 	margin-bottom: 25px;
 	background-color: white;
 }
 
 .product .thumbnail {
 	height: 250px;
-	background: url('../assets/products/kidney beans.jpg') no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	background: url('../assets/products/kidney beans.jpg') no-repeat center center;
 	background-size: cover;
 }
 
@@ -49,8 +60,12 @@
 }
 
 .product .sidebar-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	height: 60px;
 	padding: 20px;
 	background-color: #2e8e2e;
@@ -76,9 +91,15 @@
 }
 
 .product .sidebar-detail .name {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .product .sidebar-detail .name svg {
@@ -88,12 +109,20 @@
 }
 
 .product .sidebar-detail .quantity {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .product .sidebar-detail .quantity div {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 }
 
@@ -103,7 +132,6 @@
 	height: 100%;
 	background-color: transparent;
 	border: 1px solid #676767;
-	-webkit-border-radius: 0;
 	border-radius: 0;
 	font-size: 16px;
 	-webkit-appearance: none;
@@ -112,9 +140,15 @@
 }
 
 .product .sidebar-detail .quantity div span {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	width: 30px;
 	border: 1px solid #676767;
 	font-size: 20px;
@@ -133,9 +167,15 @@
 }
 
 .product .sidebar-detail .cost {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -152,42 +192,67 @@
 }
 
 .product .sidebar-detail .btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-right: 0;
 }
 
 @media all and (min-width: 800px) {
 	.product {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	.product .detail {
-		flex: 2 1 60%;
+		-webkit-box-flex: 2;
+		    -ms-flex: 2 1 60%;
+		        flex: 2 1 60%;
 		margin-right: 25px;
 		margin-bottom: 0;
 	}
 
 	.product .sidebar {
-		flex: 1 1 40%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 40%;
+		        flex: 1 1 40%;
 	}
 }
 
 @media all and (min-width: 1200px) {
 	.product .detail {
-		flex: 2 1 70%;
-		flex-direction: row;
+		-webkit-box-flex: 2;
+		    -ms-flex: 2 1 70%;
+		        flex: 2 1 70%;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	.product .thumbnail {
-		flex: 1 1 40%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 40%;
+		        flex: 1 1 40%;
 		height: auto;
 	}
 
 	.product .content {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		flex: 2 1 60%;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-flex: 2;
+		    -ms-flex: 2 1 60%;
+		        flex: 2 1 60%;
 	}
 
 	.product .btn {
@@ -195,6 +260,8 @@
 	}
 
 	.product .sidebar {
-		flex: 1 1 30%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 30%;
+		        flex: 1 1 30%;
 	}
 }

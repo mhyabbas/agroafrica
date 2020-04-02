@@ -1,3 +1,5 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .payments {
 	margin: 10px;
 	padding: 25px;
@@ -25,15 +27,23 @@
 }
 
 .payments .order {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: flex-start;
-	align-items: center;
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	color: #9a9a9a;
 	line-height: 1.2;
 }
 
 .payments .order p {
-	align-self: stretch;
+	-ms-flex-item-align: stretch;
+	    -ms-grid-row-align: stretch;
+	    align-self: stretch;
 	border-right: 1px solid #9a9a9a;
 	padding: 0 10px;
 }
@@ -66,13 +76,21 @@
 }
 
 .payments .bitcoin form {
-	flex: 1;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 }
 
 .payments .bitcoin form .form-footer div {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
-	flex: 1;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-flex: 1;
+	    -ms-flex: 1;
+	        flex: 1;
 	margin-bottom: 10px;
 }
 
@@ -84,8 +102,12 @@
 
 @media all and (min-width: 800px) {
 	.payments .bitcoin {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
-		align-items: flex-start;
+		-webkit-box-align: start;
+		    -ms-flex-align: start;
+		        align-items: flex-start;
 	}
 
 	.payments .bitcoin .qr-code {
@@ -95,6 +117,8 @@
 	}
 
 	.payments .bitcoin form .form-footer {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 
@@ -105,6 +129,8 @@
 
 @media all and (min-width: 1200px) {
 	.payments {
+		display: -webkit-box;
+		display: -ms-flexbox;
 		display: flex;
 	}
 

@@ -1,10 +1,9 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 /*Typography*/
 
 body.home-page {
-	background: url(../assets/bg.jpg) no-repeat center center; 
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
+	background: url(../assets/bg.jpg) no-repeat center center;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -46,7 +45,10 @@ body.home-page .tab-set {
 }
 
 body.home-page .tab-set .tabs {
-	flex-direction: row;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
 }
 
 body.home-page .tab-set .tabs label:first-of-type {
@@ -72,19 +74,27 @@ body.home-page .tab-set .tabs .panel {
 }
 
 body.home-page .tabs #tab-one-label {
-	order: 1;
+	-webkit-box-ordinal-group: 2;
+	    -ms-flex-order: 1;
+	        order: 1;
 }
 
 body.home-page .tabs #tab-two-label {
-	order: 2;
+	-webkit-box-ordinal-group: 3;
+	    -ms-flex-order: 2;
+	        order: 2;
 }
 
 body.home-page .tabs #tab-one-panel {
-	order: 3;
+	-webkit-box-ordinal-group: 4;
+	    -ms-flex-order: 3;
+	        order: 3;
 }
 
 body.home-page .tabs #tab-two-panel {
-	order: 4;
+	-webkit-box-ordinal-group: 5;
+	    -ms-flex-order: 4;
+	        order: 4;
 }
 
 /*Form*/
@@ -119,7 +129,15 @@ body.home-page footer a {
 	/*Layout*/
 
 	body.home-page section .column {
-		flex: 0 0 60%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 60%;
+		        flex: 0 0 60%;
+	}
+
+	/*Navigation*/
+
+	body.home-page .nav.active {
+		background: transparent;
 	}
 
 	/*Form*/
@@ -141,7 +159,9 @@ body.home-page footer a {
 	/*Layout*/
 
 	body.home-page section .column {
-		flex: 0 0 40%;
+		-webkit-box-flex: 0;
+		    -ms-flex: 0 0 40%;
+		        flex: 0 0 40%;
 	}
 
 }

@@ -1,7 +1,16 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
+
 .tracking {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 	margin: 10px;
 }
 
@@ -22,8 +31,12 @@
 }
 
 .tracking .sidebar-title {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	height: 60px;
 	padding: 20px;
 	background-color: #2e8e2e;
@@ -40,9 +53,15 @@
 }
 
 .tracking .sidebar-detail > div {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
@@ -52,7 +71,8 @@
 }
 
 .tracking .sidebar-detail > div > * {
-	flex-basis: 48%;
+	-ms-flex-preferred-size: 48%;
+	    flex-basis: 48%;
 }
 
 .tracking .sidebar-detail > div p {
@@ -74,22 +94,31 @@
 }
 
 .tracking .sidebar-detail .btn {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
 	margin-right: 0;
 }
 
 @media all and (min-width: 800px) {
 	.tracking {
-		flex-direction: row;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: row;
+		        flex-direction: row;
 	}
 
 	.tracking .map {
-		flex: 2 1 60%;
+		-webkit-box-flex: 2;
+		    -ms-flex: 2 1 60%;
+		        flex: 2 1 60%;
 		height: auto;
 	}
 
 	.tracking .sidebar {
-		flex: 1 1 40%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 40%;
+		        flex: 1 1 40%;
 		margin-right: 25px;
 		margin-bottom: 0;
 	}
@@ -97,7 +126,9 @@
 
 @media all and (min-width: 1200px) {
 	.tracking .map {
-		flex: 2 1 70%;
+		-webkit-box-flex: 2;
+		    -ms-flex: 2 1 70%;
+		        flex: 2 1 70%;
 	}
 
 	.tracking .btn {
@@ -105,6 +136,8 @@
 	}
 
 	.tracking .sidebar {
-		flex: 1 1 30%;
+		-webkit-box-flex: 1;
+		    -ms-flex: 1 1 30%;
+		        flex: 1 1 30%;
 	}
 }
