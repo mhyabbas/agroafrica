@@ -33,10 +33,9 @@
 }
 
 .payments .order p {
-	flex: 1 0 auto;
 	min-height: 40px;
 	border-right: 1px solid #9a9a9a;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 
 .payments .order p:first-of-type {
