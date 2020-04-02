@@ -22,6 +22,10 @@ body.home-page .nav {
 	background: transparent;
 }
 
+body.home-page .nav.active {
+	background: #2e8e2e;
+}
+
 body.home-page .nav .container {
 	border-bottom: 1px solid white;
 }
