@@ -59,13 +59,8 @@
 	margin: 0;
 }
 
-.payments .bitcoin {
-	display: flex;
-	align-items: flex-start;
-}
-
 .payments .bitcoin .qr-code {
-	margin-right: 20px;
+	margin-bottom: 20px;
 	width: 120px;
 	height: auto;
 }
@@ -88,7 +83,13 @@
 }
 
 @media all and (min-width: 800px) {
+	.payments .bitcoin {
+		display: flex;
+		align-items: flex-start;
+	}
+
 	.payments .bitcoin .qr-code {
+		margin-right: 20px;
 		width: 200px;
 		height: auto;
 	}
