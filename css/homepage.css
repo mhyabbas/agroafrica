@@ -1,7 +1,7 @@
 /*Typography*/
 
 body.home-page {
-	background: url(../assets/bg.jpg) no-repeat center center fixed; 
+	background: url(../assets/bg.jpg) no-repeat center center; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
