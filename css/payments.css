@@ -33,7 +33,7 @@
 }
 
 .payments .order p {
-	min-height: 40px;
+	align-self: stretch;
 	border-right: 1px solid #9a9a9a;
 	padding: 0 10px;
 }
