@@ -11,4 +11,11 @@ $(function() {
 			$(".toggle-open").hide();
 		}
 	});
+
+	/* Mobile home page background */
+	var ismobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+	if (ismobile){
+		$('body.home-page').css('background-attachment','scroll');
+	}
+
 });
