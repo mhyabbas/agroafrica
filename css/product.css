@@ -103,7 +103,7 @@
 	height: 100%;
 	background-color: transparent;
 	border: 1px solid #676767;
-	border-radius: none;
+	border-radius: 0;
 	font-size: 16px;
 	-webkit-appearance: none;
 	-moz-appearance: none;
