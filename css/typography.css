@@ -51,6 +51,11 @@ a {
 	color: white;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 @media all and (min-width: 800px) {
 	h1 {
 		font-size: 38px;
@@ -58,10 +63,6 @@ a {
 
 	h2 {
 		font-size: 24px;
-	}
-
-	img {
-		max-width: 100%;
 	}
 }
 

@@ -33,6 +33,14 @@ body.home-page .nav a {
 	color: white;
 }
 
+body.home-page .nav .sub-nav a {
+	color: #2e8e2e;
+}
+
+body.home-page .nav.active .sub-nav a {
+	color: white;
+}
+
 body.home-page .nav .item svg {
 	fill: white;
 }
@@ -138,6 +146,10 @@ body.home-page footer a {
 
 	body.home-page .nav.active {
 		background: transparent;
+	}
+
+	body.home-page .nav.active .sub-nav a {
+		color: #015b01;
 	}
 
 	/*Form*/
